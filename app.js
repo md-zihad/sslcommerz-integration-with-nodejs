@@ -18,11 +18,11 @@ app.get('/', async (req, res) => {
 
   return res.status(200).json({
     message: "Welcome to sslcommerz app",
-    url: `${process.env.ROOT}/ssl-request`
+    url: `${process.env.ROOT}/api/ssl-request`
   })
 })
 
-app.get('/ssl-request', async (req, res) => {
+app.get('/api/ssl-request', async (req, res) => {
 
   /** 
   * Create ssl session request 
